@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>VR</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-asset>
+      <img id="gazon" src="gazon.jpg" alt="gazon">
+ <a-asset-item id="rock" src="montagne3.glb"></a-asset-item>
+  <a-asset-item id="or" src="liquide2.glb"></a-asset-item>
+    </a-asset>
+
+
+<a-camera> </a-camera>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" src="#gazon" ></a-plane>
+       <a-entity gltf-model="#rock" ></a-entity>
+       <a-entity gltf-model="#or" position "100 0 0" ></a-entity>
+
+      <a-sky color="#FFFFFF"></a-sky>
+    </a-scene>
+  </body>
+</html>
